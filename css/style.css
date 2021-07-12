@@ -1,0 +1,341 @@
+/* For mobile phones: */
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 300px) {
+    /* For tablets: */
+    .item-container#item-page {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .item-container#item-page {
+        flex-direction: row;
+    }
+}
+
+.navbar {
+    background-color: #121212;
+}
+
+.navbar a {
+    color: rgba(239, 239, 239, 0.8);
+    ;
+}
+
+.navbar a:hover {
+    color: rgba(239, 239, 239, 1);
+}
+
+.navbar-toggler {
+    color: rgba(239, 239, 239, .5);
+    border: 1px solid rgba(239, 239, 239, .5);
+    font-size: .8rem;
+    padding: .5em;
+    line-height: 1rem;
+}
+
+.navbar-toggler:hover {
+    color: rgba(239, 239, 239, 1);
+    border: 1px solid rgba(239, 239, 239, 1);
+}
+
+li.nav-item {
+    margin-left: .5rem;
+}
+
+input {
+    border-radius: .8em 0 0 .8em;
+    border: 0px;
+    padding-left: 1em;
+}
+
+.btn-search {
+    background-color: #252525;
+    border-radius: 0 .8em .8em 0;
+    padding: .2em;
+}
+
+.btn-search:active {
+    background-color: #353535;
+}
+
+#search-img {
+    fill: #fff;
+}
+
+#pay-button {
+    display: flex;
+    justify-content: end;
+    margin-right: 8rem;
+}
+
+button#paypal-button {
+    background-image: url("https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10rem;
+    height: 5rem;
+}
+
+.card {
+    margin: 1.25rem;
+}
+
+div.buttons {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: auto;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.comments-wrapper {
+    margin: auto;
+}
+
+.items {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card .btn-primary {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.btn-primary {
+    background-color: darkblue;
+    border-color: darkblue;
+}
+
+.forms {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#form-inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#left-forms {
+    width: 75%;
+    margin: auto;
+    align-content: center;
+}
+
+.form-group {
+    width: 80%;
+    margin-left: auto;
+}
+
+.form-group>div input,
+.form-group>div select {
+    width: 80%;
+}
+
+.form-group {
+    margin-top: 2rem;
+}
+
+#login-button {
+    width: 80%;
+    margin: auto;
+}
+
+#signup-button {
+    width: 20%;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+meter {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0 auto 1em;
+    width: 80%;
+    height: .5em;
+    /* Applicable only to Firefox */
+    background: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+meter::-webkit-meter-bar {
+    background: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+meter[value="1"]::-webkit-meter-optimum-value {
+    background: red;
+}
+
+meter[value="2"]::-webkit-meter-optimum-value {
+    background: yellow;
+}
+
+meter[value="3"]::-webkit-meter-optimum-value {
+    background: orange;
+}
+
+meter[value="4"]::-webkit-meter-optimum-value {
+    background: green;
+}
+
+meter[value="1"]::-moz-meter-bar {
+    background: red;
+}
+
+meter[value="2"]::-moz-meter-bar {
+    background: yellow;
+}
+
+meter[value="3"]::-moz-meter-bar {
+    background: orange;
+}
+
+meter[value="4"]::-moz-meter-bar {
+    background: green;
+}
+
+.feedback {
+    color: #9ab;
+    font-size: 90%;
+    padding: 0 .25em;
+    font-family: Courgette, cursive;
+    margin-top: 1em;
+}
+
+#item-page {
+    height: 100%;
+    margin: auto;
+    border: .25rem rgb(241, 241, 241) solid;
+    border-radius: 2rem;
+    padding: 2rem;
+    flex-direction: row;
+}
+
+#page-title {
+    margin: 0;
+}
+
+em {
+    color: grey;
+}
+
+#item-details {
+    display: flex;
+    flex-direction: row;
+}
+
+#page-image {
+    width: 25%;
+}
+
+#page-image img {
+    width: 100%;
+}
+
+#page-extras {
+    padding-left: 2rem;
+    width: 75%;
+}
+
+#item-purchase {
+    height: 50%;
+    margin-left: auto;
+    border: .25rem rgb(241, 241, 241) solid;
+    border-radius: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+#selectQuantity {
+    margin: auto;
+    width: 50%;
+    border: 2px lightgrey solid;
+    border-radius: 0;
+}
+
+#cart-btn {
+    background-color: goldenrod;
+    border-color: white;
+    margin-top: 2rem;
+    margin-left: 0;
+}
+
+#cart-btn:hover {
+    background-color: gold;
+    color: black;
+}
+
+th {
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+.form-group.form-login {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    margin: 1rem;
+}
+
+#viewer {
+    padding-top: 2.5rem;
+}
+
+.book {
+    height: 100rem;
+    width: 50%;
+    margin: auto;
+    background-color: lightgrey;
+    margin-top: 2.5rem;
+}
+
+#controls {
+    width: 10%;
+    top: 7.5rem;
+    right: 10rem;
+    position: fixed;
+    color: lightgrey;
+}
+
+#controls hr {
+    background-color: lightgrey;
+}
+
+#pageForm {
+    display: flex;
+    flex-direction: column;
+    color: lightgrey;
+}
+
+#top {
+    margin-top: 1rem;
+    width: 100%;
+}
